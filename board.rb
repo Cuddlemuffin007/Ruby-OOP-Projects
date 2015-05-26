@@ -12,4 +12,13 @@ class Board
 		puts "\n"
 	end
 	
+	def update(position, symbol)
+	    if @board[position] == @empty_cell
+		  @board[position] = symbol
+		  return true
+		else
+		  return false
+		end
+	end
+	
 end
